@@ -29,8 +29,8 @@ test('Login', async ({ page }) => {
   const emailInput = page.locator('#element-0');
   const passwordInput = page.locator('#element-2');
 
-  await emailInput.fill('wl.interview.session@gmail.com');
-  await passwordInput.fill('WL2021&*');
+  await emailInput.fill('correo@mail.com');
+  await passwordInput.fill('pass123');
 
   await page.getByRole('button', { name: 'Log in' }).click();
 
